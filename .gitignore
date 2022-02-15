@@ -1,5 +1,6 @@
 ## common
 *temp.tex
+**/latexmkrc
 *.bak*
 
 ## Mac
