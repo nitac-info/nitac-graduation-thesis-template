@@ -159,3 +159,5 @@ RUN tlmgr install siunitx
 ```sh
 docker build -t ghcr.io/nitac-info/nitac-texlive-ja:custom .
 ```
+
+ビルド後にVisual Studio Codeでコンパイルする場合は `settings.json` の `latex-workshop.docker.image.latex` を書き換える
