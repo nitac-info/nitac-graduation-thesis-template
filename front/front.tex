@@ -1,0 +1,57 @@
+\documentclass[14pt,a4paper]{ujarticle}
+
+\usepackage[top=84truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{array}
+\pagestyle{empty}
+
+\makeatletter
+
+\def\@thesis{令和n年度 卒業研究論文}
+\def\department#1{\def\@department{#1}}
+
+\def\@maketitle{
+\begin{center}
+
+%修士論文と記載される部分
+{\fontsize{18.067pt}{27.101pt}\selectfont \@thesis \par}
+\vspace{22truemm}
+% 論文のタイトル部分
+{\fontsize{24.090pt}{36.135pt}\selectfont \@title \par}
+\vspace{32truemm}
+% 氏名
+{\fontsize{14.053pt}{21.079pt}\selectfont \@author \par}
+\vspace{19truemm}
+% 所属部分
+{\fontsize{14.053pt}{21.079pt}\selectfont \@department \par}
+\vspace{12truemm}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|wc{41.66mm}|wc{41.66mm}|wc{41.66mm}|} \hline
+    指導教員   & 査読者   & コース主任 \rule[0mm]{0mm}{5.59truemm}  \\ \hline
+    指導教員名 & 査読者名 & コース主任名 \rule[0mm]{0mm}{29.14truemm} \\ \hline
+  \end{tabular}
+\end{table}
+
+% 提出年月日部分
+{\fontsize{14.053pt}{21.079pt}\selectfont \@date \par}
+
+\end{center}
+}
+
+\makeatother
+
+\title{タイトル}
+\和暦
+\department{阿南工業高等専門学校\\創造技術工学科 情報コース}
+\author{著者名}
+
+% ここから本文内容記載する
+
+\begin{document}
+
+% 表紙を表示させる
+\thispagestyle{empty}
+\maketitle
+
+\end{document}
